@@ -1,0 +1,71 @@
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+# Add an "alert" alias for long running commands.  Use like so:
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+#custom alias
+alias c='clear'
+alias h='cat ~/.cache/zsh/history | sort | uniq | fzf | tr -d \\n | xclip -sel c'
+alias v='vim'
+alias z='zathura'
+alias s='sxiv'
+alias cr='clear ; bash'
+alias ld='lfub'
+alias unswallow='xprop -f WM_CLASS 8s -set WM_CLASS Unswallow'
+alias pacman='sudo pacman'
+alias vooom="xdotool key super+j key --delay 10  v o o o m  0xff0d"
+alias nitrogenR='nitrogen --set-zoom-fill --random'
+alias walR='setwal $BGDIR'
+alias telegram='~/.appimages/./Telgram'
+alias cpy='xclip -sel c'
+alias Untristing_songs="mpv --prefetch-playlist=yes --vid=no --shuffle 'https://youtube.com/playlist?list=PLvO7gmdDNrp88SgwYSBpUYE77z75XaD4P'"
+alias downloadurl='echo "aria2c --file-allocation=none -c -x 10 -s 10"'
+alias blender="$BLENDERAPPDIR/blender"
+alias sonic="/home/jay/git/sonic-pi/app/build/gui/qt/sonic-pi"
+
+#files to edit
+alias viki='vim $PERVIKIDIR/index.wiki' 
+alias To-do='v $PERVIKIDIR/To-Do.wiki'
+alias vin='v $HOME/.index'
+alias vcbs='v $HOME/.bashrc'
+alias vcxi='v $HOME/.xinitrc'
+alias vzp='v $HOME/.zprofile'
+alias vc='v $HOME/.config/'
+alias vlb='v $HOME/.local/bin/'
+alias vchk='v $HOME/.config/sxhkd/sxhkdrc'
+alias vl='v $HOME/lol/personal_wiki/Notes.wiki'
+alias vcsx='v $HOME/.config/sxiv/exec/key-handler '
+alias vczs='v $HOME/.config/zsh/.zshrc'
+alias vcv='v $HOME/.vimrc'
+alias vca='v $HOME/.config/aliasrc'
+#alias vc='v $HOME/.config/mpd/mpd.conf'
+#alias vc='v $HOME/.config/ncmpcpp/config'
+
+#cd 
+alias pb='cd $BGDIR'
+alias cs='cd  $HOME/.script/'
+alias cgA='cd $HOME/git/AUR/'
+
+
+#dir/files
+alias N='cd $noTe'
+alias Nob='cd $noTe/Sem-II-OB/'
+alias Nfc2='cd $noTe/Sem-II-FC_II/'
+alias Nbc2='cd $noTe/Sem-II-BC_II/'
+alias Nqm2='cd $noTe/Sem-II-QM_II'
+alias Npp='cd $noTe/Sem-II-PPBI/'
+alias Nfa2='cd $noTe/Sem-II-FA_II/'
+alias Nbl='cd $noTe/Sem-II-BL/'
+alias S='cd /home/jay/Learnig/FYBBI/study'

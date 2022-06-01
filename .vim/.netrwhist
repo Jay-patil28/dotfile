@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/jay/.script'
+let g:netrw_dirhist_8='/home/jay/pic/screenshot'
+let g:netrw_dirhist_7='/home/jay/git/Dwm'
+let g:netrw_dirhist_6='/home/jay/git/sonic-pi/app/vcpkg/ports/args'
+let g:netrw_dirhist_5='/usr/share/vim/vim82/autoload'
+let g:netrw_dirhist_4='/usr/share/vim/vim82'
+let g:netrw_dirhist_3='/usr/share/vim/vim82/autoload'
+let g:netrw_dirhist_2='/usr/share/vim/vim82'
+let g:netrw_dirhist_1='/home/jay/.config/pulse'
+let g:netrw_dirhist_0='/home/jay/Learnig/FYBBI/Assingment/communication/PPT/SS'
